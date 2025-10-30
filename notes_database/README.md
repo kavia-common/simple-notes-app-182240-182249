@@ -26,11 +26,11 @@ python3 init_db.py
 3) Start the API server:
 
 ```bash
-python3 api_server.py
+PORT=5001 DB_PATH=./myapp.db python3 api_server.py
 ```
 
-- The server listens on `0.0.0.0` with default port `5001`.
-- CORS is enabled for `http://localhost:3000`.
+- The server listens on `0.0.0.0` on port `5001` by default.
+- CORS is enabled for `http://localhost:3000` so the React app can call this API.
 
 ## Environment Variables
 
